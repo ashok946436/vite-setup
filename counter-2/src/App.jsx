@@ -1,6 +1,5 @@
 import { useState } from 'react'; 
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+ 
 import './App.css'
 
 function App() {
@@ -12,7 +11,10 @@ function App() {
 
   const addvalue = () => {
     if(counter <= 19){
-      setCounter(counter +1 )
+      setCounter( prevCount => prevCount + 1)
+      setCounter(prevCount => prevCount + 1 )
+      setCounter(prevCount => prevCount + 1 )
+      setCounter(prevCount => prevCount + 2 )
     }
   };
     const removevalue = () => {
